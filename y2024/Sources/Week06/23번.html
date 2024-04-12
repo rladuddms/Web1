@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>수강과목조사</title>
+    </head>
+    <body>
+        <h3>수강과목조사</h3>
+        <form method="get" action="form_app.js">
+            이름: <input type="text" name="email"/> <br>
+            학과: <input type="tel" name="p_tel" /><br>
+            학년: <select name="학년" size="1">
+                <option>1학년</option> <option>2학년</option>
+                <option>3학년</option> <option>4학년 이상</option>
+            </select>
+            <br>수강과목(중복선택가능): <select name="수강과목" size="3" multiple>
+                <option value="IT기술의이해" selected>IT기술의이해</option>
+                <option value="웹프로그래밍기초">웹프로그래밍기초</option>
+                <option value="UI/UX설계">UI/UX설계</option>
+                <option value="&nbsp;">&nbsp;</option>
+            </select> </br>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+        </p>
+    </body>
+</html>
