@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>실습문제 20</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var mon="월요일: monday";
+        var tue="화요일: tuesday";
+        var wed="수요일: wednesday";
+        var thu="목요일: thursday";
+        var fri="금요일: friday";
+        var sat="토요일: saturday";
+        var sun="일요일: sunday";
+
+        var monday="mon: 월요일";
+        var tuesday="tue: 화요일";
+        var wednesday="wed: 수요일";
+        var thursday="thu: 목요일";
+        var friday="fri: 금요일";
+        var saturday="sat: 토요일";
+        var sunday="sun: 일요일";
+
+        var day=prompt("번역하고 싶은 요일을 쓰시오....\n","");
+
+        if(day=="월요일"){
+            title= mon;}
+        else if(day=="화요일"){
+            title= tue;}
+        else if(day=="수요일"){
+             title=wed;}
+        else if(day=="목요일"){
+            title=thu;}
+        else if(day=="금요일"){
+            title=fri;}
+        else if(day=="토요일"){
+            title=sat;}
+        else if(day=="일요일"){
+            title=sun;}
+        else if(day=="mon"){
+        title=monday;}
+        else if(day=="tue"){
+        title=tuesday;}
+        else if(day=="wed"){
+        title=wednesday;}
+        else if(day=="thu"){
+        title=thursday;}
+        else if(day=="fri"){
+        title=friday;}
+        else if(day=="sat"){
+        title=saturday;}
+        else if(day=="sun"){
+        title=sunday;}
+            else{
+            alert("리스트에 없는 요일을 입력했습니다.");
+            title="";}
+
+        document.write(title);
+
+    </script>
+</body>
+</html>

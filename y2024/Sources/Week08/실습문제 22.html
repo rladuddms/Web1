@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>실습문제22</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var result=0;
+        var list = "+=1, -=2, *=3, /=4";
+         i =parseFloat (prompt("숫자를 쓰시오 \n",""));
+        var j =prompt("아래의 사칙연산중 하나를 고르시오\n"+list,"");
+        var t =parseFloat (prompt("숫자를 쓰시오 \n",""));
+
+        switch(j){
+            case "1":
+                result= i+t;
+                document.write(i+"+"+t+"=");
+                document.write(result);
+                break;
+            case"2":
+               result=i-t;
+               document.write(i+"-"+t+"=");
+               document.write(result);
+               break;
+            case"3":
+               result= i*t;
+               document.write(i+"*"+t+"=");
+               document.write(result);
+               break;
+            case"4":
+            if (t !== 0) {
+                result = i / t;
+                document.write(i+"/"+t+"=");
+                document.write(result);
+                break;
+            } else {
+                alert("0으로 나눌 수 없습니다.");
+            }
+            break;
+        default:
+            alert("잘못된 연산 기호입니다.");
+            break;
+        }
+    </script>
+</body>
+</html>

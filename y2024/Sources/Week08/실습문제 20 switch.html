@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>실습문제 20번</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var mon="월요일: monday";
+        var tue="화요일: tuesday";
+        var wed="수요일: wednesday";
+        var thu="목요일: thursday";
+        var fri="금요일: friday";
+        var sat="토요일: saturday";
+        var sun="일요일: sunday";
+        
+        var monday="mon: 월요일";
+        var tuesday="tue: 화요일";
+        var wednesday="wed: 수요일";
+        var thursday="thu: 목요일";
+        var friday="fri: 금요일";
+        var saturday="sat: 토요일";
+        var sunday="sun: 일요일";
+        var day=prompt("What day is today?(한글로 작성하시오)...\n","");
+        switch(day){
+            case "월요일":
+                title=mon; break;
+            case "화요일":
+                title=tue; break;
+            case "수요일":
+                title=wed; break;
+            case "목요일":
+                title=thu; break;
+            case "금요일":
+                title=fri; break;
+            case "토요일":
+                title=sat; break;
+            case "일요일":
+                title=sun; break;
+                case "mon":
+                title=monday; break;
+            case "tue":
+                title=tuesday; break;
+            case "wed":
+                title=wednesday; break;
+            case "thu":
+                title=thursday; break;
+            case "fri":
+                title=friday; break;
+            case "sat":
+                title=saturday; break;
+            case "sun":
+                title=sunday; break;
+            default:
+                alert("리스트에 없는 요일을 선택했습니다.");
+                title="";
+        }
+        document.write(title);
+    </script>
+</body>
+</html>

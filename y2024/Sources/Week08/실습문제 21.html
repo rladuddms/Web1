@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>실습문제21</title>
+</head>
+<body>
+    <table border="1">
+        <script type="text/javascript">
+            var list="1~9중 쓰시오"
+            var i = prompt("행의 갯수가될 숫자를 쓰시오\n"+list,"");
+            var j = prompt("열의 갯수가될 숫자를 쓰시오\n"+list,"");
+            var tmp= j;
+            document.write(i+"개 의 행을 만듭니다.<br/>");
+            document.write(j+"개 의 열을 만듭니다.");
+            for(i; i>=1; i--){
+                document.write("<tr> \n");
+                    j= tmp;
+                    for(j; j>=1; j--){
+                        document.write("<td> . </td>");
+                    }
+                document.write("</tr> \n");
+            }
+
+        </script>
+    </table>
+</body>
+</html>
