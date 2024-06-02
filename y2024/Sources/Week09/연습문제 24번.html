@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>연습문제 24번</title>
+</head>
+<body>
+
+<script>
+    function inputWords(count) {
+        var words = [];
+        for (var i = 0; i < count; i++) {
+            var word = prompt("단어를 입력하세요 (" + (i + 1) + "번째 단어)");
+            words.push(word);
+        }
+        return words;
+    }
+
+    var count = parseInt(prompt("정렬할 단어의 개수를 입력하세요"));
+    var words = inputWords(count);
+
+    var ascendingOrder = words.slice().sort();
+    var descendingOrder = words.slice().sort().reverse();
+
+    document.write("<h3>오름차순 정렬</h3>");
+    document.write("<ul>");
+    for (var i = 0; i < ascendingOrder.length; i++) {
+        document.write("<li>" + ascendingOrder[i] + "</li>");
+    }
+    document.write("</ul>");
+
+    document.write("<h3>내림차순 정렬</h3>");
+    document.write("<ul>");
+    for (var j = 0; j < descendingOrder.length; j++) {
+        document.write("<li>" + descendingOrder[j] + "</li>");
+    }
+    document.write("</ul>");
+</script>
+
+</body>
+</html>

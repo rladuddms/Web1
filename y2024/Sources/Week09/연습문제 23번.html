@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>연습문제 23번</title>
+</head>
+<body>
+
+<script>
+    function inputNumbers(count) {
+        var numbers = [];
+        for (var i = 0; i < count; i++) {
+            var number = parseInt(prompt("숫자를 입력하세요 (" + (i + 1) + "번째 숫자)"));
+            numbers.push(number);
+        }
+        return numbers;
+    }
+
+    function findMax(numbers) {
+        return Math.max(...numbers);
+    }
+
+    function findMin(numbers) {
+        return Math.min(...numbers);
+    }
+
+    var count = parseInt(prompt("입력할 숫자의 개수를 입력하세요"));
+    var numbers = inputNumbers(count);
+    var max = findMax(numbers);
+    var min = findMin(numbers);
+
+    document.write("입력한 숫자 중 최대값: " + max + "<br>");
+    document.write("입력한 숫자 중 최소값: " + min);
+</script>
+
+</body>
+</html>

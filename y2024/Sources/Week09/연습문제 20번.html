@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>연습문제 20번</title>
+</head>
+<body>
+
+<script>
+    var userInput = prompt("숫자와 문자열을 입력하세요 (예: 100 외출할 시간입니다)");
+    var inputArray = userInput.split(" ");
+    var number = parseInt(inputArray[0]);
+    var message = inputArray.slice(1).join(" ");
+
+    setTimeout(function() {
+        alert(message);
+    }, number * 1000);
+</script>
+
+</body>
+</html>
+   
